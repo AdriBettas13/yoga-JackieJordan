@@ -1290,8 +1290,9 @@ background-position-y: -101px;
 {
 
 height: auto;
-padding-right: 1rem;
+margin-top: 1rem;
 margin-right: 15rem;
+padding-right: 1rem;
 line-height: 1rem;
 white-space: initial;
 word-wrap: break-word;
@@ -1299,6 +1300,7 @@ display: inline-block;
 overflow:scroll
 
 }
+
 .ul__uni > li
 {
     font-size: 1rem;
