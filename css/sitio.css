@@ -932,7 +932,7 @@ transition: .5s;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   
+   border: 0.15rem solid black;
 }
 .columna2
 {
@@ -944,7 +944,8 @@ transition: .5s;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border-inline: 0.15rem solid black;
+   border-block: 0.15rem solid black;
+   border-right: 0.15rem solid black;
    
 }
 
@@ -958,7 +959,8 @@ transition: .5s;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   
+   border-block: 0.15rem solid black;
+   border-right: 0.15rem solid black;
 }
 
 .divUnirte
@@ -1272,6 +1274,7 @@ margin-bottom: 3%;
 width: 100vw;
 height: 33vh;
 background-position-y: -101px;
+border-block: none;
 }
 
 .columna2
@@ -1279,12 +1282,16 @@ background-position-y: -101px;
     width: 100vw;
     height: 33vh;
     background-position-y: -185px;
+  
+  border: 0.15rem solid black ;
 }
 
 .columna3
 {
     width: 100vw;
     height: 33vh;
+    border-bottom: 0.15rem solid black;
+    border-top: none;
 }
 .ul__uni
 {
@@ -1325,7 +1332,7 @@ overflow:scroll
 }
 .btn__nin
 {
-    position: absolute;
+position: absolute;
 left: 69%;
 top: 86.3%;
 }
