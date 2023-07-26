@@ -1046,7 +1046,7 @@ padding-inline: 2rem;
         align-items: center;
         justify-content: center;
         margin-inline: 0;
-        gap: 5rem;
+        gap: 2rem;
 
     }
 
@@ -1144,8 +1144,9 @@ text-align: center;
 nav > ul.servicioUl
 {
     flex-wrap:wrap;
-    gap:2rem;
-    padding-left: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1223,6 +1224,96 @@ div > .imgTer
 
 
 
+body > .headerQuien{
+    padding-inline: 0;
+    padding-top: 3%;
+    margin: 0;
+    
+}
+.quienDiv
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    
+}
+.navQuien
+{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding-block: 0.5rem;
+   
+}
+nav > .ulQuien
+{
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.aQuien
+{
+ font-size: 1.2rem;
+ color: white;
+display: block ruby;
+padding-inline: 0.25rem;
+border-left: 0.150rem solid rgb(252, 252, 252);
+border-right: 0.125rem solid rgb(253, 251, 251);
+margin-bottom: 3%;
+}
+.divQuien
+{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgJackie
+{
+    width: 80vw;
+    position: inherit;
+    padding-inline: 0;
+}
+.divQuien > p
+{
+    font-size: 2rem;
+    margin-inline: 2rem;
+    padding-inline: 0;
+    padding-block: 1rem 2rem;
+    text-align: start;
+    
+  }
+  .imgDiv
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: absolute;
+    top: 94%;
+    left: 0;
+    padding-inline: 2rem;
+    background-color: white;
+    padding: 0;
+    
+  }
+ .imgDiv > .imgQuien
+  {
+    width: 15%;
+  }
+  .imgDiv > .img2Quien
+  {
+    width: 20%;
+  }
+
+  
+
+
 .header__uni{
     padding-inline: 0;
     padding-top: 3%;
@@ -1248,8 +1339,9 @@ div > .imgTer
 nav > .ul__nav__uni
 {
     flex-wrap:wrap;
-    gap:2rem;
-    padding-left: 1.5rem;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1282,8 +1374,7 @@ border-block: none;
     width: 100vw;
     height: 33vh;
     background-position-y: -185px;
-  
-  border: 0.15rem solid black ;
+    border: 0.15rem solid black ;
 }
 
 .columna3
@@ -1320,20 +1411,20 @@ overflow:scroll
 .btn__ter
 {
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 65%;
 }
 .btn__emb
 {
     position: absolute;
     left: 65%;
-    top: 44.7%;
+    top: 40%;
     margin-top: 49%;
 }
 .btn__nin
 {
 position: absolute;
-left: 69%;
-top: 86.3%;
+left: 65%;
+top: 83%;
 }
 }
