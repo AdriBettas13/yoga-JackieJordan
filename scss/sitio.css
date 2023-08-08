@@ -1,0 +1,707 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap");
+@font-face {
+  font-family: "lobster";
+  src: url("../fonts/lobster.ttf");
+  font-family: "lusitana";
+  src: url("../fonts/lusitana.ttf");
+  font-family: "lobsterregular";
+  src: url("../fonts/lobsterregular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body__index {
+  background-image: url("../img/vista-posterior-mujer-haciendo-yoga-al-aire-libre.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.inicioDiv {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.inicioDiv .img2 {
+  width: 15%;
+  margin-inline: 3%;
+  margin-top: 1%;
+}
+.inicioDiv .navInicio {
+  margin-top: 3%;
+  flex-grow: 1;
+}
+.inicioDiv .inicio {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  gap: 7rem;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  margin-right: 25%;
+  text-align: center;
+  justify-content: center;
+}
+.inicioDiv .inicio .barra {
+  padding-right: 5rem;
+}
+.inicioDiv .inicio .barra .menu {
+  color: black;
+  text-decoration: none;
+  font-family: lusitanaregular;
+  font-size: 2rem;
+  border-left: 0.15rem solid rgb(12, 12, 12);
+  border-right: 0.125rem solid rgb(14, 13, 13);
+  border-radius: 25%;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5s;
+  text-align: center;
+}
+.inicioDiv .inicio .barra .menu:hover {
+  background: rgba(60, 6, 28, 0.4941176471);
+  cursor: pointer;
+}
+
+.mainTitulo {
+  padding: 15%;
+  display: flex;
+  position: relative;
+}
+.mainTitulo .divTitulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  bottom: 45%;
+  position: absolute;
+  right: 10%;
+}
+.mainTitulo .divTitulo .tituloIndex {
+  font-family: lobsterregular;
+  font-size: 4.5rem;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+.btn__ini {
+  text-decoration: none;
+  color: rgb(247, 243, 243);
+  background-color: black;
+  padding-block: 0.35em 0.35em;
+  padding-right: 0.75rem;
+  padding-left: 1rem;
+  text-align: left;
+  float: left;
+  font-family: lusitanaregular;
+  font-size: 3rem;
+  border-radius: 5rem;
+  border: 0.125rem solid #000000;
+  transition: 0.5s;
+  margin-block: 1rem;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  opacity: 50%;
+}
+.btn__ini:hover {
+  background: white;
+  color: black;
+  opacity: 100%;
+}
+
+#body__servicio {
+  background-color: #d3c8c0;
+  background-image: url("../img/flor background servicios.png");
+  background-repeat: repeat-x;
+  background-size: 30%, 30%;
+  background-position: 40% 1100%, -2% 1100%;
+}
+#body__servicio .headerServicio {
+  padding-top: 1.65%;
+  padding-bottom: 3%;
+  padding-left: 5.6%;
+}
+#body__servicio .headerServicio .servicioDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+#body__servicio .headerServicio .servicioDiv .btn2 {
+  font-family: lusitanaregular;
+  font-weight: 700;
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  border: 0.15rem solid black;
+  text-align: center;
+  border-radius: 2.5625em 2.5625em 2.5625em 2.5625em;
+  transition: 0.5s;
+  width: 9.375rem;
+  margin: 1px 1px 1px 1px;
+  padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+}
+#body__servicio .headerServicio .servicioDiv .btn2:hover {
+  background: black;
+  color: white;
+}
+#body__servicio .headerServicio .servicioDiv nav .servicioUl {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding-top: 0.41rem;
+  padding-left: 0.23rem;
+}
+#body__servicio .headerServicio .servicioDiv nav .servicioUl li .aServicio {
+  color: black;
+  text-decoration: none;
+  font-family: lusitanaregular;
+  font-size: 2rem;
+  border-left: 0.15rem solid rgb(12, 12, 12);
+  border-right: 0.125rem solid rgb(14, 13, 13);
+  border-radius: 25%;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5s;
+}
+#body__servicio .headerServicio .servicioDiv nav .servicioUl li .aServicio:hover {
+  background: rgba(60, 6, 28, 0.3882352941);
+  cursor: pointer;
+}
+#body__servicio .mainServicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#body__servicio .mainServicio .terceraEdad .imgTer {
+  width: 21.875rem;
+}
+#body__servicio .mainServicio .terceraEdad p {
+  background-color: rgba(250, 210, 224, 0.568627451);
+  width: 21.875rem;
+  font-family: lusitana;
+  font-size: 1em;
+  text-align: justify;
+  margin-top: -0.25rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+#body__servicio .mainServicio .embarazadas p {
+  background-color: rgba(250, 210, 224, 0.568627451);
+  width: 21.875rem;
+  font-family: lusitana;
+  font-size: 1em;
+  text-align: justify;
+  margin-top: -0.25rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+#body__servicio .mainServicio .embarazadas .imgEmb {
+  width: 21.875rem;
+}
+#body__servicio .mainServicio .niños p {
+  background-color: rgba(250, 210, 224, 0.568627451);
+  width: 21.875rem;
+  font-family: lusitana;
+  font-size: 1em;
+  text-align: justify;
+  margin-top: -0.25rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+#body__servicio .mainServicio .niños .imgNin {
+  width: 21.875rem;
+}
+
+body .headerQuien {
+  background-color: rgba(250, 210, 224, 0.5254901961);
+  padding-top: 1.65%;
+  padding-bottom: 3%;
+  padding-left: 5.6%;
+}
+body .headerQuien .quienDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: center;
+  align-items: center;
+}
+body .headerQuien .quienDiv .btn3 {
+  font-family: lusitanaregular;
+  font-weight: 700;
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  border: 0.15rem solid black;
+  text-align: center;
+  border-radius: 2.5625em 2.5625em 2.5625em 2.5625em;
+  transition: 0.5s;
+  width: 9.375rem;
+  margin: 1px 1px 1px 1px;
+  padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+}
+body .headerQuien .quienDiv .btn3:hover {
+  background: black;
+  color: white;
+}
+body .headerQuien .quienDiv nav .ulQuien {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding-top: 0.41rem;
+  padding-left: 0.23rem;
+}
+body .headerQuien .quienDiv nav .ulQuien li .aQuien {
+  color: black;
+  text-decoration: none;
+  font-family: lusitanaregular;
+  font-size: 2rem;
+  border-left: 0.15rem solid rgb(12, 12, 12);
+  border-right: 0.125rem solid rgb(14, 13, 13);
+  border-radius: 25%;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5s;
+}
+body .headerQuien .quienDiv nav .ulQuien li .aQuien:hover {
+  background: rgba(60, 6, 28, 0.3882352941);
+  cursor: pointer;
+}
+body .mainQuien {
+  background-color: rgba(250, 210, 224, 0.5254901961);
+  padding-top: 10%;
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  position: relative;
+}
+body .mainQuien .divQuien {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 8%;
+}
+body .mainQuien .divQuien .imgJackie {
+  padding-left: 10%;
+  width: 32vw;
+  position: absolute;
+  right: 68%;
+  top: 30%;
+}
+body .mainQuien .divQuien p {
+  font-family: lobsterregular;
+  font-size: 3.9rem;
+  padding-right: 5%;
+  margin-left: 35%;
+  text-align: justify;
+}
+body .mainQuien .divQuien p strong {
+  color: #ab663c;
+}
+body .mainQuien .imgDiv {
+  position: absolute;
+  left: 45%;
+  padding: 5rem;
+  top: 67%;
+  display: flex;
+  gap: 10rem;
+}
+body .mainQuien .imgDiv .img1Quien {
+  width: 5vw;
+}
+body .mainQuien .imgDiv .img2Quien {
+  width: 7vw;
+}
+body .mainQuien .imgDiv .img3Quien {
+  width: 5vw;
+}
+
+#contactos {
+  background-image: url("../img/piedras-zen-fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#contactos .contacto__header {
+  padding-top: 1.65%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 5.6%;
+}
+#contactos .contacto__header .contacto__div__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+#contactos .contacto__header .contacto__div__header .btn4 {
+  font-family: lusitanaregular;
+  font-weight: 700;
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  border: 0.15rem solid black;
+  text-align: center;
+  border-radius: 2.5625em 2.5625em 2.5625em 2.5625em;
+  transition: 0.5s;
+  width: 9.375rem;
+  margin: 1px 1px 1px 1px;
+  padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+}
+#contactos .contacto__header .contacto__div__header .btn4:hover {
+  background: black;
+  color: white;
+}
+#contactos .contacto__header .contacto__div__header nav .contacto__ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding-top: 0.45rem;
+  padding-left: 0.23rem;
+}
+#contactos .contacto__header .contacto__div__header nav .contacto__ul li .contacto__a {
+  color: black;
+  text-decoration: none;
+  font-family: lusitanaregular;
+  font-size: 2rem;
+  border-left: 0.15rem solid rgb(12, 12, 12);
+  border-right: 0.125rem solid rgb(14, 13, 13);
+  border-radius: 25%;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5s;
+}
+#contactos .contacto__header .contacto__div__header nav .contacto__ul li .contacto__a:hover {
+  background: rgba(60, 6, 28, 0.3882352941);
+  cursor: pointer;
+}
+#contactos main .contacto__titulo {
+  font-family: lobsterregular;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: -1rem;
+  text-align: center;
+}
+#contactos main .contacto__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+#contactos main .contacto__div .contacto__form {
+  background-color: rgba(250, 210, 224, 0.2274509804);
+  padding-inline: 4rem;
+  padding-block: 7rem 7rem;
+  border-color: #000000;
+  border-width: 0.5rem;
+  border-style: dashed solid;
+  text-align: start;
+  width: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: -1rem;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-template-areas: "nombre email email" "fecha hora servicio" "mensajes mensajes mensajes" "botones botones botones2";
+  width: 50rem;
+}
+#contactos main .contacto__div .contacto__form .nombre {
+  grid-area: nombre;
+}
+#contactos main .contacto__div .contacto__form .email {
+  grid-area: email;
+}
+#contactos main .contacto__div .contacto__form .servicio {
+  grid-area: servicio;
+}
+#contactos main .contacto__div .contacto__form .fecha {
+  grid-area: fecha;
+}
+#contactos main .contacto__div .contacto__form .fecha:hover {
+  cursor: pointer;
+}
+#contactos main .contacto__div .contacto__form .hora {
+  grid-area: hora;
+}
+#contactos main .contacto__div .contacto__form .hora:hover {
+  cursor: pointer;
+}
+#contactos main .contacto__div .contacto__form .mensaje {
+  grid-area: mensajes;
+}
+#contactos main .contacto__div .contacto__form .botones {
+  grid-area: botones;
+}
+#contactos main .contacto__div .contacto__form .botones:hover {
+  background-color: rgb(113, 212, 113);
+  cursor: pointer;
+  opacity: 100%;
+}
+#contactos main .contacto__div .contacto__form .botones2 {
+  grid-area: botones2;
+}
+#contactos main .contacto__div .contacto__form .botones2:hover {
+  background-color: rgb(192, 72, 72);
+  cursor: pointer;
+  opacity: 100%;
+}
+#contactos main .contacto__div .contacto__form input {
+  padding-block: 1rem;
+  font-family: lusitanaregular;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 50%;
+  border-color: #000000;
+}
+#contactos main .contacto__div .contacto__form input:hover {
+  opacity: 100%;
+}
+#contactos main .contacto__div .contacto__form select {
+  padding: 1rem;
+  font-family: lusitanaregular;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 50%;
+}
+#contactos main .contacto__div .contacto__form select:hover {
+  cursor: pointer;
+  opacity: 100%;
+  background-color: white;
+}
+#contactos main .contacto__div .contacto__form textarea {
+  padding-block: 1rem;
+  font-family: lusitanaregular;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 50%;
+}
+#contactos main .contacto__div .contacto__form textarea:hover {
+  opacity: 100%;
+}
+#contactos main .contacto__div .contacto__form .botones {
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-color: black;
+}
+#contactos main .contacto__div .contacto__form .botones2 {
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-color: black;
+}
+#contactos .footer__contactos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.05rem;
+}
+#contactos .footer__contactos .div__padre {
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+#contactos .footer__contactos .hijo h1 {
+  font-family: lobsterregular;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-decoration: underline;
+}
+#contactos .footer__contactos .hijo p {
+  font-family: lusitanaregular;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+#contactos .footer__contactos .fot__icon {
+  margin-right: 5rem;
+  letter-spacing: 1rem;
+}
+#contactos .footer__contactos .fot__icon i {
+  font-size: 3rem;
+  list-style-type: none;
+  color: black;
+}
+
+.header__uni {
+  padding-top: 1.183rem;
+  padding-left: 29.6rem;
+  background-color: rgba(250, 210, 224, 0.2274509804);
+}
+.header__uni .div__uni {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.header__uni .div__uni nav .ul__nav__uni {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding-top: 0.41rem;
+  padding-left: 0.23rem;
+}
+.header__uni .div__uni nav .ul__nav__uni li .uni__a {
+  color: black;
+  text-decoration: none;
+  font-family: lusitanaregular;
+  font-size: 2rem;
+  border-left: 0.15rem solid rgb(12, 12, 12);
+  border-right: 0.125rem solid rgb(14, 13, 13);
+  border-radius: 25%;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5s;
+}
+.header__uni .div__uni nav .ul__nav__uni li .uni__a:hover {
+  background: rgba(60, 6, 28, 0.3882352941);
+  cursor: pointer;
+}
+
+.divUnirte {
+  margin: 0;
+  width: 100vw;
+}
+.divUnirte .divCon {
+  width: 100vw;
+}
+.divUnirte .divCon .columna1 {
+  background-image: url("../img/personas-mayores-felices-tiro-medio-interior.jpg");
+  height: 90.6vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.15rem solid black;
+}
+.divUnirte .divCon .columna1 .ul__uni {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(250, 210, 224, 0.2274509804);
+  border-color: #000000;
+  border-width: 0.15rem;
+  border-style: dashed solid;
+}
+.divUnirte .divCon .columna1 .ul__uni li {
+  font-family: lobsterregular;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-block: 1rem 2rem;
+}
+.divUnirte .divCon .columna1 .btn__ter {
+  margin-top: 10rem;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+.divUnirte .columna2 {
+  background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.jpg");
+  height: 90.6vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-block: 0.15rem solid black;
+  border-right: 0.15rem solid black;
+}
+.divUnirte .columna2 .ul__uni {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(250, 210, 224, 0.2274509804);
+  border-color: #000000;
+  border-width: 0.15rem;
+  border-style: dashed solid;
+}
+.divUnirte .columna2 .ul__uni li {
+  font-family: lobsterregular;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-block: 1rem 2rem;
+}
+.divUnirte .columna2 .btn__emb {
+  margin-top: 10rem;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+.divUnirte .columna3 {
+  background-image: url("../img/joven-sonriente-apuntando-arriba.jpg");
+  height: 90.6vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-block: 0.15rem solid black;
+  border-right: 0.15rem solid black;
+}
+.divUnirte .columna3 .ul__uni {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(250, 210, 224, 0.2274509804);
+  border-color: #000000;
+  border-width: 0.15rem;
+  border-style: dashed solid;
+}
+.divUnirte .columna3 .ul__uni li {
+  font-family: lobsterregular;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-block: 1rem 2rem;
+}
+.divUnirte .columna3 .btn__nin {
+  margin-top: 10rem;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}/*# sourceMappingURL=sitio.css.map */
