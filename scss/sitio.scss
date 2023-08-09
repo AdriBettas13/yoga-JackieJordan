@@ -1,12 +1,13 @@
 @import "./partials/fonts";
 @import "./partials/reset";
+@import "./partials/footer";
 @import  url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap'); 
 
 
     
 #body__index
 {
-    background-image: url("../img/vista-posterior-mujer-haciendo-yoga-al-aire-libre.jpg"); 
+    background-image: url("../img/vista-posterior-mujer-haciendo-yoga-al-aire-libre.webp"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,10 +107,10 @@ position: relative;
 
  
 }
-}
+
 .btn__ini
 {
-    text-decoration: none;
+text-decoration: none;
 color: rgb(247, 243, 243);
 background-color: black;
 padding-block: .35em .35em;
@@ -128,6 +129,7 @@ top: 85%;
 left: 10%;
 opacity: 50%;
 
+
 &:hover
 {
     background: white;
@@ -135,7 +137,21 @@ opacity: 50%;
     opacity: 100%;
 }
 }
+}
+.fotInicio
+{
+.div__padre
+{
+    margin-top: 5rem;
+    
+  
 
+}
+.fot__icon
+{
+    margin-top: 7rem;
+}
+}
           // servicios
 
 #body__servicio
@@ -145,7 +161,7 @@ opacity: 50%;
               url("../img/flor\ background\ servicios.png");
               background-repeat: repeat-x;
               background-size: 30%, 30%;
-              background-position:40% 1100%, -2% 1100%;
+              background-position: -146px 241px;
              
 .headerServicio
 {
@@ -163,7 +179,7 @@ opacity: 50%;
    flex-wrap: nowrap;
    align-items: flex-end;
    align-content: flex-end;
-
+   
    
    .btn2
 {
@@ -254,6 +270,12 @@ p
     text-align: justify;
     margin-top: -0.25rem;
     padding: 1rem 1rem 1rem 1rem; 
+transition: 0.3s;
+    &:hover
+    {
+        background-color:#fad2e0;
+        cursor: auto;
+    }
 }
 }
 .embarazadas 
@@ -270,7 +292,12 @@ p
     text-align: justify;
     margin-top: -0.25rem;
     padding: 1rem 1rem 1rem 1rem;
-
+    transition: 0.3s;
+    &:hover
+    {
+        background-color:#fad2e0;
+        cursor: auto;
+    }
 }
 .imgEmb
 {
@@ -289,6 +316,12 @@ p
     text-align: justify;
     margin-top: -0.25rem;
     padding: 1rem 1rem 1rem 1rem;
+    transition: 0.3s;
+    &:hover
+    {
+        background-color:#fad2e0;
+        cursor: auto;
+    }
 }
 
 .imgNin
@@ -454,7 +487,7 @@ padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
 
  #contactos
  {
-    background-image: url("../img/piedras-zen-fondo.jpg");
+    background-image: url("../img/piedras-zen-fondo.webp");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -698,52 +731,7 @@ textarea
  }
  }  
 }
-.footer__contactos{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding-bottom: 1.05rem;
-
-    .div__padre
-{
-    display: flex;
-    gap: 9rem;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 2rem;
-     
-}
-.hijo
-{
-    h1 
-    {
-        font-family: lobsterregular;
-        font-size: 1.5rem;
-        text-align: justify;
-        text-decoration: underline;
-    }
-    p
-
-    {
-        font-family:lusitanaregular ;
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        text-align: justify;
-    }
-}
-.fot__icon
-{
-    margin-right: 5rem;
-    letter-spacing: 1rem;
    
-    i
-    {
-        font-size: 3rem;
-        list-style-type: none;
-        color: black;
-    } 
-}
-}     
 }
 
             // unirte
@@ -815,7 +803,7 @@ textarea
 
           .columna1
 {
-   background-image: url("../img/personas-mayores-felices-tiro-medio-interior.jpg");
+   background-image: url("../img/personas-mayores-felices-tiro-medio-interior.webp");
    height: 90.6vh;
    background-position: center;
    background-size: cover;
@@ -835,6 +823,12 @@ textarea
    border-color: #000000;
    border-width: 0.15rem;
    border-style: dashed solid;
+   transition: 0.3s;
+
+   &:hover
+   {
+    background-color:#fad2e0 ;
+   }
 
    li
 {
@@ -843,6 +837,7 @@ textarea
    font-weight: 700;
    line-height: 1rem;
    padding-block: 1rem 2rem;
+   margin: 1rem;
    
 
 }
@@ -853,12 +848,27 @@ margin-top: 10rem;
 border-radius: 2rem;
 padding-block: 1rem;
 padding-inline: 2rem; 
+background-color: black;
+opacity: 50%;
+transition: 0.5s;
+font-family: lusitanaregular;
+font-size: 1rem;
+color: white;
+border-color: #000000;
+&:hover
+{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 100%;
+font-size: 2rem;
 }
 }
-       }
+}
+       
        .columna2
        {
-          background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.jpg");
+          background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.webp");
           height: 90.6vh;
           background-position: center;
           background-size: cover;
@@ -879,7 +889,13 @@ padding-inline: 2rem;
              border-color: #000000;
              border-width: 0.15rem;
              border-style: dashed solid;
-          
+             transition: 0.3s;
+             margin: 1rem;
+             
+             &:hover
+             {
+              background-color:#fad2e0 ;
+             }
              li
           {
              font-family: lobsterregular;
@@ -887,6 +903,7 @@ padding-inline: 2rem;
              font-weight: 700;
              line-height: 1rem;
              padding-block: 1rem 2rem;
+             margin: 1rem;
              
           }
           }
@@ -895,12 +912,28 @@ padding-inline: 2rem;
 margin-top: 10rem;
 border-radius: 2rem;
 padding-block: 1rem;
-padding-inline: 2rem ;
+padding-inline: 2rem;
+background-color: black;
+opacity: 50%;
+transition: 0.5s;
+font-family: lusitanaregular;
+font-size: 1rem;
+color: white;
+border-color: #000000;
+&:hover
+{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 100%;
+font-size: 2rem;
+}
+
 }
        }  
        .columna3
 {
-   background-image: url("../img/joven-sonriente-apuntando-arriba.jpg");
+   background-image: url("../img/joven-sonriente-apuntando-arriba.webp");
    height: 90.6vh;
    background-position: center;
    background-size: cover;
@@ -921,6 +954,12 @@ padding-inline: 2rem ;
       border-color: #000000;
       border-width: 0.15rem;
       border-style: dashed solid;
+      transition: 0.3s;
+      
+      &:hover
+   {
+    background-color:#fad2e0 ;
+   }
    
       li
    {
@@ -929,18 +968,38 @@ padding-inline: 2rem ;
       font-weight: 700;
       line-height: 1rem;
       padding-block: 1rem 2rem;
+      margin: 1rem;
       
    }
 }
 .btn__nin 
 {
 
-margin-top: 10rem;
+margin-top: 9rem;
 border-radius: 2rem;
 padding-block: 1rem;
 padding-inline: 2rem;
+background-color: black;
+opacity: 50%;
+transition: 0.5s;
+font-family: lusitanaregular;
+font-size: 1rem;
+color: white;
+border-color: #000000;
+&:hover
+{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 100%;
+font-size: 2rem;
+}
 
 
 }
+}
  }
+ 
  }
+
+ @import "./partials/mq480pxmobile";

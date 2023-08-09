@@ -14,8 +14,75 @@
   box-sizing: border-box;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.05rem;
+  margin-top: 3rem;
+}
+footer .div__padre {
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+footer .hijo h1 {
+  font-family: lobsterregular;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-decoration: underline;
+}
+footer .hijo p {
+  font-family: lusitanaregular;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+footer .fot__icon {
+  margin-right: 5rem;
+  letter-spacing: 1rem;
+}
+footer .fot__icon i {
+  font-size: 2rem;
+  list-style-type: none;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .fotInicio .div__padre {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+  .fotInicio .div__padre .hijo h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+  .fotInicio .div__padre .hijo p {
+    font-size: 1rem;
+    letter-spacing: 0.0002;
+    text-align: start;
+  }
+  .fotInicio .fot__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    margin: 0;
+    padding-top: 1rem;
+    gap: 0.5rem;
+  }
+  .fotInicio .fot__icon i {
+    font-size: 1.33rem;
+  }
+}
 #body__index {
-  background-image: url("../img/vista-posterior-mujer-haciendo-yoga-al-aire-libre.jpg");
+  background-image: url("../img/vista-posterior-mujer-haciendo-yoga-al-aire-libre.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,8 +159,7 @@
   text-align: justify;
   flex-wrap: wrap;
 }
-
-.btn__ini {
+.mainTitulo .btn__ini {
   text-decoration: none;
   color: rgb(247, 243, 243);
   background-color: black;
@@ -113,10 +179,17 @@
   left: 10%;
   opacity: 50%;
 }
-.btn__ini:hover {
+.mainTitulo .btn__ini:hover {
   background: white;
   color: black;
   opacity: 100%;
+}
+
+.fotInicio .div__padre {
+  margin-top: 5rem;
+}
+.fotInicio .fot__icon {
+  margin-top: 7rem;
 }
 
 #body__servicio {
@@ -124,7 +197,7 @@
   background-image: url("../img/flor background servicios.png");
   background-repeat: repeat-x;
   background-size: 30%, 30%;
-  background-position: 40% 1100%, -2% 1100%;
+  background-position: -146px 241px;
 }
 #body__servicio .headerServicio {
   padding-top: 1.65%;
@@ -201,6 +274,11 @@
   text-align: justify;
   margin-top: -0.25rem;
   padding: 1rem 1rem 1rem 1rem;
+  transition: 0.3s;
+}
+#body__servicio .mainServicio .terceraEdad p:hover {
+  background-color: #fad2e0;
+  cursor: auto;
 }
 #body__servicio .mainServicio .embarazadas p {
   background-color: rgba(250, 210, 224, 0.568627451);
@@ -210,6 +288,11 @@
   text-align: justify;
   margin-top: -0.25rem;
   padding: 1rem 1rem 1rem 1rem;
+  transition: 0.3s;
+}
+#body__servicio .mainServicio .embarazadas p:hover {
+  background-color: #fad2e0;
+  cursor: auto;
 }
 #body__servicio .mainServicio .embarazadas .imgEmb {
   width: 21.875rem;
@@ -222,6 +305,11 @@
   text-align: justify;
   margin-top: -0.25rem;
   padding: 1rem 1rem 1rem 1rem;
+  transition: 0.3s;
+}
+#body__servicio .mainServicio .niños p:hover {
+  background-color: #fad2e0;
+  cursor: auto;
 }
 #body__servicio .mainServicio .niños .imgNin {
   width: 21.875rem;
@@ -335,7 +423,7 @@ body .mainQuien .imgDiv .img3Quien {
 }
 
 #contactos {
-  background-image: url("../img/piedras-zen-fondo.jpg");
+  background-image: url("../img/piedras-zen-fondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -519,40 +607,6 @@ body .mainQuien .imgDiv .img3Quien {
   transition: 0.3s;
   border-color: black;
 }
-#contactos .footer__contactos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1.05rem;
-}
-#contactos .footer__contactos .div__padre {
-  display: flex;
-  gap: 9rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 2rem;
-}
-#contactos .footer__contactos .hijo h1 {
-  font-family: lobsterregular;
-  font-size: 1.5rem;
-  text-align: justify;
-  text-decoration: underline;
-}
-#contactos .footer__contactos .hijo p {
-  font-family: lusitanaregular;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  text-align: justify;
-}
-#contactos .footer__contactos .fot__icon {
-  margin-right: 5rem;
-  letter-spacing: 1rem;
-}
-#contactos .footer__contactos .fot__icon i {
-  font-size: 3rem;
-  list-style-type: none;
-  color: black;
-}
 
 .header__uni {
   padding-top: 1.183rem;
@@ -602,7 +656,7 @@ body .mainQuien .imgDiv .img3Quien {
   width: 100vw;
 }
 .divUnirte .divCon .columna1 {
-  background-image: url("../img/personas-mayores-felices-tiro-medio-interior.jpg");
+  background-image: url("../img/personas-mayores-felices-tiro-medio-interior.webp");
   height: 90.6vh;
   background-position: center;
   background-size: cover;
@@ -621,6 +675,10 @@ body .mainQuien .imgDiv .img3Quien {
   border-color: #000000;
   border-width: 0.15rem;
   border-style: dashed solid;
+  transition: 0.3s;
+}
+.divUnirte .divCon .columna1 .ul__uni:hover {
+  background-color: #fad2e0;
 }
 .divUnirte .divCon .columna1 .ul__uni li {
   font-family: lobsterregular;
@@ -628,15 +686,30 @@ body .mainQuien .imgDiv .img3Quien {
   font-weight: 700;
   line-height: 1rem;
   padding-block: 1rem 2rem;
+  margin: 1rem;
 }
 .divUnirte .divCon .columna1 .btn__ter {
   margin-top: 10rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
+  background-color: black;
+  opacity: 50%;
+  transition: 0.5s;
+  font-family: lusitanaregular;
+  font-size: 1rem;
+  color: white;
+  border-color: #000000;
 }
-.divUnirte .columna2 {
-  background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.jpg");
+.divUnirte .divCon .columna1 .btn__ter:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 100%;
+  font-size: 2rem;
+}
+.divUnirte .divCon .columna2 {
+  background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.webp");
   height: 90.6vh;
   background-position: center;
   background-size: cover;
@@ -647,7 +720,7 @@ body .mainQuien .imgDiv .img3Quien {
   border-block: 0.15rem solid black;
   border-right: 0.15rem solid black;
 }
-.divUnirte .columna2 .ul__uni {
+.divUnirte .divCon .columna2 .ul__uni {
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -656,22 +729,42 @@ body .mainQuien .imgDiv .img3Quien {
   border-color: #000000;
   border-width: 0.15rem;
   border-style: dashed solid;
+  transition: 0.3s;
+  margin: 1rem;
 }
-.divUnirte .columna2 .ul__uni li {
+.divUnirte .divCon .columna2 .ul__uni:hover {
+  background-color: #fad2e0;
+}
+.divUnirte .divCon .columna2 .ul__uni li {
   font-family: lobsterregular;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1rem;
   padding-block: 1rem 2rem;
+  margin: 1rem;
 }
-.divUnirte .columna2 .btn__emb {
+.divUnirte .divCon .columna2 .btn__emb {
   margin-top: 10rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
+  background-color: black;
+  opacity: 50%;
+  transition: 0.5s;
+  font-family: lusitanaregular;
+  font-size: 1rem;
+  color: white;
+  border-color: #000000;
 }
-.divUnirte .columna3 {
-  background-image: url("../img/joven-sonriente-apuntando-arriba.jpg");
+.divUnirte .divCon .columna2 .btn__emb:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 100%;
+  font-size: 2rem;
+}
+.divUnirte .divCon .columna3 {
+  background-image: url("../img/joven-sonriente-apuntando-arriba.webp");
   height: 90.6vh;
   background-position: center;
   background-size: cover;
@@ -682,7 +775,7 @@ body .mainQuien .imgDiv .img3Quien {
   border-block: 0.15rem solid black;
   border-right: 0.15rem solid black;
 }
-.divUnirte .columna3 .ul__uni {
+.divUnirte .divCon .columna3 .ul__uni {
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -691,17 +784,575 @@ body .mainQuien .imgDiv .img3Quien {
   border-color: #000000;
   border-width: 0.15rem;
   border-style: dashed solid;
+  transition: 0.3s;
 }
-.divUnirte .columna3 .ul__uni li {
+.divUnirte .divCon .columna3 .ul__uni:hover {
+  background-color: #fad2e0;
+}
+.divUnirte .divCon .columna3 .ul__uni li {
   font-family: lobsterregular;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1rem;
   padding-block: 1rem 2rem;
+  margin: 1rem;
 }
-.divUnirte .columna3 .btn__nin {
-  margin-top: 10rem;
+.divUnirte .divCon .columna3 .btn__nin {
+  margin-top: 9rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
+  background-color: black;
+  opacity: 50%;
+  transition: 0.5s;
+  font-family: lusitanaregular;
+  font-size: 1rem;
+  color: white;
+  border-color: #000000;
+}
+.divUnirte .divCon .columna3 .btn__nin:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 100%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  #body__index {
+    width: 105%;
+  }
+  #body__index .headerInicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #body__index .headerInicio .inicioDiv {
+    align-items: center;
+    justify-content: center;
+  }
+  #body__index .headerInicio .inicioDiv .img2 {
+    width: 50%;
+    margin-inline: 0;
+  }
+  #body__index .headerInicio .inicioDiv .navInicio {
+    margin-inline: 0;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  #body__index .headerInicio .inicioDiv .navInicio .inicio {
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 0;
+    gap: 1rem;
+  }
+  #body__index .headerInicio .inicioDiv .navInicio .inicio .barra {
+    padding-inline: inherit;
+  }
+  #body__index .headerInicio .inicioDiv .navInicio .inicio .barra .menu {
+    font-size: 1.2rem;
+    color: black;
+    display: block ruby;
+    padding-inline: 0.25rem;
+    border-left: 0.15rem solid black(252, 252, 252);
+    border-right: 0.125rem solid black(253, 251, 251);
+    margin-bottom: 3%;
+  }
+  #body__index .headerInicio .inicioDiv .navInicio .inicio .barra .menu:hover {
+    background: rgba(60, 6, 28, 0.3882352941);
+    cursor: pointer;
+    color: black;
+  }
+  #body__index .divTitulo {
+    width: 75%;
+    position: absolute;
+    left: 12%;
+    top: 25%;
+  }
+  #body__index .divTitulo .tituloIndex {
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+  }
+  #body__index .btn__ini {
+    margin-top: 10rem;
+    margin-left: 8rem;
+    padding-block: 0.25em 0.25em;
+  }
+  #body__index .fotInicio {
+    margin-top: 13rem;
+  }
+  #body__index .fotInicio .div__padre {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+  #body__index .fotInicio .fot__icon {
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+  .header__uni {
+    padding-inline: 0;
+    padding-top: 3%;
+    margin: 0;
+  }
+  .header__uni .div__uni {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .header__uni .div__uni .nav__uni {
+    width: 100%;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+  .header__uni .div__uni .nav__uni .ul__nav__uni {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__uni .div__uni .nav__uni .ul__nav__uni li .uni__a {
+    font-size: 1.2rem;
+    color: black;
+    display: block ruby;
+    padding-inline: 0.25rem;
+    border-left: 0.15rem solid black(252, 252, 252);
+    border-right: 0.125rem solid black(253, 251, 251);
+    margin-bottom: 3%;
+  }
+  .header__uni .div__uni .nav__uni .ul__nav__uni li .uni__a:hover {
+    background: rgba(60, 6, 28, 0.3882352941);
+    cursor: pointer;
+    color: black;
+  }
+  .divUnirte .divCon {
+    display: flex;
+    flex-direction: column;
+  }
+  .divUnirte .divCon .columna1 {
+    width: 100vw;
+    height: 33vh;
+    background-position-y: -101px;
+    border-block: none;
+  }
+  .divUnirte .divCon .columna1 .ul__uni {
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 15rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+    white-space: initial;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: scroll;
+  }
+  .divUnirte .divCon .columna1 .ul__uni li {
+    font-size: 1rem;
+    padding-block: 1rem 1rem;
+  }
+  .divUnirte .divCon .columna1 .btn__ter {
+    position: absolute;
+    top: 16%;
+    left: 65%;
+  }
+  .divUnirte .divCon .columna1 .btn__ter:hover {
+    font-size: 1rem;
+  }
+  .divUnirte .divCon .columna2 {
+    width: 100vw;
+    height: 33vh;
+    background-position-y: -185px;
+    border: 0.15rem solid black;
+  }
+  .divUnirte .divCon .columna2 .ul__uni {
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 15rem;
+    margin-left: 0;
+    padding-right: 1rem;
+    line-height: 1rem;
+    white-space: initial;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: scroll;
+  }
+  .divUnirte .divCon .columna2 .ul__uni li {
+    font-size: 1rem;
+    padding-block: 1rem 1rem;
+  }
+  .divUnirte .divCon .columna2 .btn__emb {
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    margin-top: 49%;
+  }
+  .divUnirte .divCon .columna2 .btn__emb:hover {
+    font-size: 1rem;
+  }
+  .divUnirte .divCon .columna3 {
+    width: 100vw;
+    height: 33vh;
+    border-bottom: 0.15rem solid black;
+    border-top: none;
+  }
+  .divUnirte .divCon .columna3 .ul__uni {
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 15rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+    white-space: initial;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: scroll;
+  }
+  .divUnirte .divCon .columna3 .ul__uni li {
+    font-size: 1rem;
+    padding-block: 1rem 1rem;
+  }
+  .divUnirte .divCon .columna3 .btn__nin {
+    position: absolute;
+    left: 65%;
+    top: 83%;
+  }
+  .divUnirte .divCon .columna3 .btn__nin:hover {
+    font-size: 1rem;
+  }
+  .footer__uni .div__padre {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .footer__uni .div__padre .hijo h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+  .footer__uni .div__padre .hijo p {
+    font-size: 1rem;
+    letter-spacing: 0.0002;
+    text-align: start;
+  }
+  .footer__uni .fot__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-inline: 0;
+    padding-top: 1rem;
+    gap: 0.5rem;
+  }
+  .footer__uni .fot__icon i {
+    font-size: 1.33rem;
+  }
+  #body__servicio {
+    background-size: contain;
+    background-position-y: 59px;
+    background-repeat: repeat-y;
+    background-position-x: -56px;
+  }
+  #body__servicio .headerServicio {
+    padding-inline: 0;
+    padding-top: 3%;
+  }
+  #body__servicio .headerServicio .servicioDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    min-height: 10vh;
+  }
+  #body__servicio .headerServicio .servicioDiv .btn2 {
+    background-color: white;
+    opacity: 85%;
+    margin-left: 1rem;
+    position: fixed;
+    z-index: 20;
+    top: 72px;
+  }
+  #body__servicio .headerServicio .servicioDiv .navServicio {
+    width: 100%;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+  #body__servicio .headerServicio .servicioDiv .navServicio .servicioUl {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  #body__servicio .headerServicio .servicioDiv .navServicio .servicioUl li .aServicio {
+    font-size: 1.2rem;
+    color: black;
+    display: block ruby;
+    padding-inline: 0.25rem;
+    border-left: 0.15rem solid black(252, 252, 252);
+    border-right: 0.125rem solid black(253, 251, 251);
+    margin-bottom: 3%;
+  }
+  #body__servicio .headerServicio .servicioDiv .navServicio .servicioUl li .aServicio:hover {
+    background: rgba(60, 6, 28, 0.3882352941);
+    cursor: pointer;
+    color: black;
+  }
+  #body__servicio .mainServicio {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  #body__servicio .mainServicio .terceraEdad .serviciosTitulo {
+    margin-top: 2rem;
+    color: black;
+    -webkit-text-stroke: 0.04rem #ffffff;
+    background-color: rgba(250, 210, 224, 0.568627451);
+    transition: 0.3s;
+  }
+  #body__servicio .mainServicio .terceraEdad .serviciosTitulo:hover {
+    background-color: #fad2e0;
+    cursor: auto;
+    color: black;
+    -webkit-text-stroke: 0.06rem rgba(250, 210, 224, 0.568627451);
+  }
+  #body__servicio .mainServicio .terceraEdad .imgTer {
+    width: 21.875rem;
+  }
+  #body__servicio .mainServicio .terceraEdad .edad {
+    width: 21.875rem;
+    text-align: initial;
+    font-size: 1.15rem;
+  }
+  #body__servicio .mainServicio .terceraEdad .edad:hover {
+    transform: scale(1.1);
+    cursor: auto;
+  }
+  #body__servicio .mainServicio .embarazadas h1 {
+    margin-top: 2rem;
+    color: black;
+    -webkit-text-stroke: 0.04rem white;
+    background-color: rgba(250, 210, 224, 0.568627451);
+    transition: 0.3s;
+  }
+  #body__servicio .mainServicio .embarazadas h1:hover {
+    background-color: #fad2e0;
+    cursor: auto;
+    color: black;
+    -webkit-text-stroke: 0.06rem rgba(250, 210, 224, 0.568627451);
+  }
+  #body__servicio .mainServicio .embarazadas .emb {
+    text-align: initial;
+    font-size: 1.15rem;
+  }
+  #body__servicio .mainServicio .embarazadas .emb:hover {
+    transform: scale(1.1);
+    cursor: auto;
+  }
+  #body__servicio .mainServicio .niños h1 {
+    margin-top: 2rem;
+    color: black;
+    -webkit-text-stroke: 0.06rem white;
+    background-color: rgba(250, 210, 224, 0.568627451);
+    transition: 0.3s;
+  }
+  #body__servicio .mainServicio .niños h1:hover {
+    background-color: #fad2e0;
+    cursor: auto;
+    color: black;
+    -webkit-text-stroke: 0.06rem rgba(250, 210, 224, 0.568627451);
+  }
+  #body__servicio .mainServicio .niños .nin {
+    text-align: initial;
+    font-size: 1.15rem;
+  }
+  #body__servicio .mainServicio .niños .nin:hover {
+    transform: scale(1.1);
+    cursor: auto;
+  }
+  #body__servicio .fotServicio {
+    border-top-style: double;
+    border-top-width: 0.2rem;
+  }
+  #body__servicio .fotServicio .div__padre {
+    margin-block: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  #body__servicio .fotServicio .fot__icon {
+    margin-block: 0;
+  }
+  body .headerQuien {
+    padding-inline: 0;
+    padding-top: 3%;
+  }
+  body .headerQuien .quienDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    min-height: 10vh;
+  }
+  body .headerQuien .quienDiv .btn3 {
+    background-color: white;
+    opacity: 85%;
+    margin-left: 1rem;
+    position: fixed;
+    z-index: 20;
+    top: 72px;
+  }
+  body .headerQuien .quienDiv .navQuien {
+    width: 100%;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+  body .headerQuien .quienDiv .navQuien .ulQuien {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  body .headerQuien .quienDiv .navQuien .ulQuien li .aQuien {
+    font-size: 1.2rem;
+    color: black;
+    display: block ruby;
+    padding-inline: 0.25rem;
+    border-left: 0.15rem solid black(252, 252, 252);
+    border-right: 0.125rem solid black(253, 251, 251);
+    margin-bottom: 3%;
+  }
+  body .headerQuien .quienDiv .navQuien .ulQuien li .aQuien:hover {
+    background: rgba(60, 6, 28, 0.3882352941);
+    cursor: pointer;
+    color: black;
+  }
+  body .mainQuien .divQuien {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .mainQuien .divQuien .imgJackie {
+    width: 80vw;
+    position: inherit;
+    padding-inline: 0;
+  }
+  body .mainQuien .divQuien p {
+    font-size: 2rem;
+    margin-inline: 2rem;
+    padding-inline: 0;
+    padding-block: 1rem 2rem;
+    text-align: start;
+  }
+  body .mainQuien .imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: absolute;
+    top: 96%;
+    left: 0;
+    padding-inline: 2rem;
+    background-color: white;
+    padding: 0;
+  }
+  body .mainQuien .imgDiv .imgQuien {
+    width: 15%;
+    margin-top: 1rem;
+  }
+  body .mainQuien .imgDiv .img2Quien {
+    width: 20%;
+  }
+  body .fotQuien {
+    border-top-style: double;
+    border-top-width: 0.2rem;
+    margin-top: 6rem;
+  }
+  body .fotQuien .div__padre {
+    margin-block: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  body .fotQuien .fot__icon {
+    margin-block: 0;
+  }
+  #contactos .contacto__header {
+    padding-block: 3% 1%;
+    padding-inline: 0;
+  }
+  #contactos .contacto__header .contacto__div__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #contactos .contacto__header .contacto__div__header .btn4 {
+    background-color: white;
+    opacity: 85%;
+    margin-left: 1rem;
+    position: fixed;
+    z-index: 20;
+    top: 72px;
+  }
+  #contactos .contacto__header .contacto__div__header .contacto__nav {
+    width: 100%;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+  #contactos .contacto__header .contacto__div__header .contacto__nav .contacto__ul {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #contactos .contacto__header .contacto__div__header .contacto__nav .contacto__ul li .contacto__a {
+    font-size: 1.2rem;
+    color: black;
+    display: block ruby;
+    padding-inline: 0.25rem;
+    border-left: 0.15rem solid black 252, 252, 252;
+    border-right: 0.125rem solid black 253, 251, 251;
+    margin-bottom: 3%;
+  }
+  #contactos .contacto__header .contacto__div__header .contacto__nav .contacto__ul li .contacto__a:hover {
+    background: rgba(60, 6, 28, 0.3882352941);
+    cursor: pointer;
+    color: black;
+  }
+  #contactos .contacto__main .contacto__titulo {
+    font-size: 2rem;
+    margin-block: 0 1rem;
+  }
+  #contactos .contacto__main .contacto__titulo h1 {
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 4rem;
+    margin-top: 2rem;
+  }
+  #contactos .contacto__main .contacto__div {
+    margin-inline: 3rem;
+  }
+  #contactos .contacto__main .contacto__div .contacto__form {
+    border-color: #000000;
+    border-width: 0.2rem;
+    border-style: dashed solid;
+    width: auto;
+    padding: 1rem;
+    grid-template-columns: 0.5 0.5 0.5;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nombre nombre nombre" "email email email" "fecha hora hora" "servicio servicio servicio" "mensajes mensajes mensajes" "botones botones botones2";
+  }
+  #contactos .footer__contactos {
+    border-top-style: double;
+    border-top-width: 0.2rem;
+  }
+  #contactos .footer__contactos .div__padre {
+    margin-block: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  #contactos .footer__contactos .fot__icon {
+    margin-block: 0;
+  }
 }/*# sourceMappingURL=sitio.css.map */
