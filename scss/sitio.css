@@ -1027,7 +1027,8 @@ body .fotQuien {
     margin: 0;
   }
   main .divUnirte .divCon .columna2 {
-    background-position: -219px;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: table;
   }
   main .divUnirte .divCon .columna2 .btn__emb {
@@ -1554,7 +1555,8 @@ body .fotQuien {
   }
   main .divUnirte .divCon .columna2 {
     display: table;
-    background-position: -304px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   main .divUnirte .divCon .columna2 .btn__emb {
     margin-top: 2rem;

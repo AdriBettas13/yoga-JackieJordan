@@ -206,7 +206,9 @@ main
             .columna2
             {
             display: table;
-            background-position: -304px;
+            
+            background-size: cover;
+            background-repeat: no-repeat;
             .btn__emb
             {
                 margin-top: 2rem;
