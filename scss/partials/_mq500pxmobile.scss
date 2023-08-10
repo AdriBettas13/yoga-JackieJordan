@@ -1,10 +1,11 @@
        //  MEDIA QUERIES
 
-       @media  screen and (max-width: 480px) 
+       @media  screen and (max-width: 499px) 
        {
         #body__index
         {
-        width: 105%;
+        width: 100%;
+        
        
         .headerInicio
         {
@@ -83,13 +84,14 @@
         }
         .btn__ini
         {
-           margin-top: 10rem;
-           margin-left: 8rem;
+            margin-top: 8rem;
+            margin-left: -2rem;
             padding-block: .25em .25em;
+
         }
         .fotInicio
 {
-   margin-top: 13rem;
+   margin-top: 15rem;;
 .div__padre
 {
   
@@ -102,6 +104,7 @@
 {
    margin-top: 0;
    margin-right: 2rem;
+   
 }
        }
        }
@@ -158,7 +161,10 @@ margin-bottom: 3%;
 }
 }
 }
+
        }
+       main 
+       {
        .divUnirte
        {
        .divCon
@@ -169,6 +175,7 @@ margin-bottom: 3%;
 
            .columna1
 {
+display: table;
 width: 100vw;
 height: 33vh;
 background-position-y: -101px;
@@ -177,7 +184,7 @@ border-block: none;
 {
 
 height: auto;
-margin-top: 1rem;
+margin-top: 2rem;
 margin-right: 15rem;
 padding-right: 1rem;
 line-height: 1rem;
@@ -193,9 +200,8 @@ li{
 }
 .btn__ter
 {
-   position: absolute;
-   top: 16%;
-   left: 65%;
+   margin-top: -8rem;
+   margin-left: 20rem;
    &:hover
    {
        font-size: 1rem;
@@ -204,6 +210,7 @@ li{
 }
 .columna2
 {
+   display: table;
    width: 100vw;
    height: 33vh;
    background-position-y: -185px;
@@ -212,7 +219,7 @@ li{
    {
    
    height: auto;
-   margin-top: 1rem;
+   margin-top: 2rem;
    margin-right: 15rem;
    margin-left: 0;
    padding-right: 1rem;
@@ -229,10 +236,8 @@ li{
    }
    .btn__emb
 {
-   position: absolute;
-   left: 65%;
-   top: 40%;
-   margin-top: 49%;
+   margin-top: -27%;
+   margin-left: 20rem;
    &:hover
    {
        font-size: 1rem;
@@ -241,17 +246,19 @@ li{
 }
 .columna3
 {
+   display: table;
    width: 100vw;
    height: 33vh;
    border-bottom: 0.15rem solid black;
    border-top: none;
+   background-position-x: 104px;
    
    .ul__uni
    {
    
    height: auto;
-   margin-top: 1rem;
-   margin-right: 15rem;
+   margin-top: 2rem;
+   margin-inline: 0 15rem;
    padding-right: 1rem;
    line-height: 1rem;
    white-space: initial;
@@ -267,9 +274,8 @@ li{
    
    .btn__nin
 {
-position: absolute;
-left: 65%;
-top: 83%;
+   margin-left: 20rem;
+   margin-top: -120px;
 &:hover
 {
    font-size: 1rem;
@@ -280,8 +286,12 @@ top: 83%;
 
        }
    }
+}
    .footer__uni
    {
+      border-top-style: double;
+      border-top-width: 0.2rem;
+      margin-top: 0.1rem;
    .div__padre
    {
    flex-direction: column;
@@ -588,6 +598,7 @@ margin-bottom: 3%;
    }
    .mainQuien
    {
+      padding-top: 6%;
        .divQuien
 {
    flex-direction: column;
@@ -727,8 +738,8 @@ h1
 {
 font-size: 2rem;
 text-align: end;
-margin-right: 4rem;
 margin-top: 2rem;
+margin-right: 3rem;
 }
 }
 .contacto__div
@@ -743,7 +754,7 @@ margin-top: 2rem;
    border-style: dashed solid;
 width: auto;
 padding: 1rem;
-grid-template-columns: 0.5 0.5 0.5;
+grid-template-columns: 0.5fr 0.5fr 0.5fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
 grid-template-areas:  "nombre nombre nombre"
                      "email email email"
