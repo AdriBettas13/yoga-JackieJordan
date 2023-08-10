@@ -676,7 +676,7 @@ body .fotQuien {
 
 .header__uni {
   padding-top: 1.183rem;
-  padding-left: 17rem;
+  padding-left: 15rem;
   background-color: rgba(250, 210, 224, 0.2274509804);
 }
 .header__uni .div__uni {
@@ -2060,12 +2060,12 @@ body .fotQuien {
   }
   .header__uni .div__uni .nav__uni .ul__nav__uni {
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.58rem;
     align-items: center;
     justify-content: center;
   }
   .header__uni .div__uni .nav__uni .ul__nav__uni li .uni__a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: black;
     display: block ruby;
     padding-inline: 0.25rem;
@@ -2194,13 +2194,13 @@ body .fotQuien {
   }
   body .headerQuien .quienDiv .navQuien .ulQuien {
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.58rem;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
   }
   body .headerQuien .quienDiv .navQuien .ulQuien li .aQuien {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: black;
     display: block ruby;
     padding-inline: 0.25rem;
@@ -2296,13 +2296,13 @@ body .fotQuien {
   }
   #body__servicio .headerServicio .servicioDiv .navServicio .servicioUl {
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.58rem;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
   }
   #body__servicio .headerServicio .servicioDiv .navServicio .servicioUl li .aServicio {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: black;
     display: block ruby;
     padding-inline: 0.25rem;
@@ -2422,12 +2422,12 @@ body .fotQuien {
   }
   #contactos .contacto__header .contacto__div__header .contacto__nav .contacto__ul {
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.58rem;
     align-items: center;
     justify-content: center;
   }
   #contactos .contacto__header .contacto__div__header .contacto__nav .contacto__ul li .contacto__a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: black;
     display: block ruby;
     padding-inline: 0.25rem;
