@@ -1,7 +1,11 @@
-
 @font-face {
     font-family: "lobster" ;src: url("../fonts/lobster.ttf"); 
     font-family: "lusitana"; src: url("../fonts/lusitana.ttf");
     font-family: "lobsterregular"; src: url("../fonts/lobsterregular.ttf");
 }
   
+@import  url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap'); 
+
+$fontlobster: "lobster";
+$fontlusitana: "lusitana";
+$fontlobsterregular: "lobsterregular";

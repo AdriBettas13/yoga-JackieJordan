@@ -29,13 +29,13 @@ footer .div__padre {
   margin-left: 2rem;
 }
 footer .hijo h1 {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 1.5rem;
   text-align: justify;
   text-decoration: underline;
 }
 footer .hijo p {
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: justify;
@@ -183,7 +183,7 @@ footer .fot__icon i {
 .inicioDiv .inicio .barra .menu {
   color: black;
   text-decoration: none;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.5rem;
   border-left: 0.15rem solid rgb(12, 12, 12);
   border-right: 0.125rem solid rgb(14, 13, 13);
@@ -216,7 +216,7 @@ footer .fot__icon i {
   right: 10%;
 }
 .mainTitulo .divTitulo .tituloIndex {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 4.5rem;
   text-align: justify;
   flex-wrap: wrap;
@@ -230,7 +230,7 @@ footer .fot__icon i {
   padding-left: 1rem;
   text-align: left;
   float: left;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 3rem;
   border-radius: 5rem;
   border: 0.125rem solid #000000;
@@ -242,6 +242,7 @@ footer .fot__icon i {
   opacity: 50%;
 }
 .mainTitulo .btn__ini:hover {
+  transform: scale(1.2);
   background: white;
   color: black;
   opacity: 100%;
@@ -268,13 +269,13 @@ footer .fot__icon i {
 }
 #body__servicio .headerServicio .servicioDiv {
   display: flex;
-  justify-content: space-around;
   flex-wrap: nowrap;
-  align-items: flex-end;
   align-content: flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 #body__servicio .headerServicio .servicioDiv .btn2 {
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-weight: 700;
   font-size: 3rem;
   text-decoration: none;
@@ -290,6 +291,7 @@ footer .fot__icon i {
 #body__servicio .headerServicio .servicioDiv .btn2:hover {
   background: black;
   color: white;
+  transform: scale(1.2);
 }
 #body__servicio .headerServicio .servicioDiv nav .servicioUl {
   display: flex;
@@ -303,7 +305,7 @@ footer .fot__icon i {
 #body__servicio .headerServicio .servicioDiv nav .servicioUl li .aServicio {
   color: black;
   text-decoration: none;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.5rem;
   border-left: 0.15rem solid rgb(12, 12, 12);
   border-right: 0.125rem solid rgb(14, 13, 13);
@@ -320,6 +322,7 @@ footer .fot__icon i {
 }
 #body__servicio .mainServicio {
   display: flex;
+  align-content: inherit;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
@@ -331,7 +334,7 @@ footer .fot__icon i {
 #body__servicio .mainServicio .terceraEdad p {
   background-color: rgba(250, 210, 224, 0.568627451);
   width: 21.875rem;
-  font-family: lusitana;
+  font-family: "lusitana";
   font-size: 1em;
   text-align: justify;
   margin-top: -0.25rem;
@@ -345,7 +348,7 @@ footer .fot__icon i {
 #body__servicio .mainServicio .embarazadas p {
   background-color: rgba(250, 210, 224, 0.568627451);
   width: 21.875rem;
-  font-family: lusitana;
+  font-family: "lusitana";
   font-size: 1em;
   text-align: justify;
   margin-top: -0.25rem;
@@ -362,7 +365,7 @@ footer .fot__icon i {
 #body__servicio .mainServicio .niños p {
   background-color: rgba(250, 210, 224, 0.568627451);
   width: 21.875rem;
-  font-family: lusitana;
+  font-family: "lusitana";
   font-size: 1em;
   text-align: justify;
   margin-top: -0.25rem;
@@ -392,7 +395,7 @@ body .headerQuien .quienDiv {
   align-items: center;
 }
 body .headerQuien .quienDiv .btn3 {
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-weight: 700;
   font-size: 3rem;
   text-decoration: none;
@@ -408,6 +411,7 @@ body .headerQuien .quienDiv .btn3 {
 body .headerQuien .quienDiv .btn3:hover {
   background: black;
   color: white;
+  transform: scale(1.2);
 }
 body .headerQuien .quienDiv nav .ulQuien {
   display: flex;
@@ -421,7 +425,7 @@ body .headerQuien .quienDiv nav .ulQuien {
 body .headerQuien .quienDiv nav .ulQuien li .aQuien {
   color: black;
   text-decoration: none;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.5rem;
   border-left: 0.15rem solid rgb(12, 12, 12);
   border-right: 0.125rem solid rgb(14, 13, 13);
@@ -457,7 +461,7 @@ body .mainQuien .divQuien .imgJackie {
   top: 13%;
 }
 body .mainQuien .divQuien p {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 3rem;
   padding-right: 5%;
   margin-left: 35%;
@@ -474,14 +478,11 @@ body .mainQuien .imgDiv {
   display: flex;
   gap: 10rem;
 }
-body .mainQuien .imgDiv .img1Quien {
+body .mainQuien .imgDiv .img1Quien, body .mainQuien .imgDiv .img3Quien {
   width: 5vw;
 }
 body .mainQuien .imgDiv .img2Quien {
   width: 7vw;
-}
-body .mainQuien .imgDiv .img3Quien {
-  width: 5vw;
 }
 body .fotQuien {
   margin-top: 9rem;
@@ -502,14 +503,13 @@ body .fotQuien {
 }
 #contactos .contacto__header .contacto__div__header {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #contactos .contacto__header .contacto__div__header .btn4 {
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-weight: 700;
   font-size: 3rem;
   text-decoration: none;
@@ -525,6 +525,7 @@ body .fotQuien {
 #contactos .contacto__header .contacto__div__header .btn4:hover {
   background: black;
   color: white;
+  transform: scale(1.2);
 }
 #contactos .contacto__header .contacto__div__header nav .contacto__ul {
   list-style-type: none;
@@ -537,7 +538,7 @@ body .fotQuien {
 #contactos .contacto__header .contacto__div__header nav .contacto__ul li .contacto__a {
   color: black;
   text-decoration: none;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.5rem;
   border-left: 0.15rem solid rgb(12, 12, 12);
   border-right: 0.125rem solid rgb(14, 13, 13);
@@ -553,7 +554,7 @@ body .fotQuien {
   cursor: pointer;
 }
 #contactos .contacto__main .contacto__titulo {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-weight: 700;
   font-size: 3rem;
   margin-top: -1rem;
@@ -628,7 +629,7 @@ body .fotQuien {
 }
 #contactos .contacto__main .contacto__div .contacto__form input {
   padding-block: 1rem;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   color: black;
   font-weight: 700;
   font-size: 1rem;
@@ -640,7 +641,7 @@ body .fotQuien {
 }
 #contactos .contacto__main .contacto__div .contacto__form select {
   padding: 1rem;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   color: black;
   font-weight: 700;
   font-size: 1rem;
@@ -653,7 +654,7 @@ body .fotQuien {
 }
 #contactos .contacto__main .contacto__div .contacto__form textarea {
   padding-block: 1rem;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   color: black;
   font-weight: 700;
   font-size: 1rem;
@@ -680,10 +681,10 @@ body .fotQuien {
 }
 .header__uni .div__uni {
   display: flex;
-  justify-content: space-around;
   flex-wrap: nowrap;
-  align-items: flex-end;
   align-content: flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 .header__uni .div__uni nav .ul__nav__uni {
   display: flex;
@@ -697,7 +698,7 @@ body .fotQuien {
 .header__uni .div__uni nav .ul__nav__uni li .uni__a {
   color: black;
   text-decoration: none;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1.5rem;
   border-left: 0.15rem solid rgb(12, 12, 12);
   border-right: 0.125rem solid rgb(14, 13, 13);
@@ -711,6 +712,7 @@ body .fotQuien {
 .header__uni .div__uni nav .ul__nav__uni li .uni__a:hover {
   background: rgba(60, 6, 28, 0.3882352941);
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .divUnirte {
@@ -746,7 +748,7 @@ body .fotQuien {
   background-color: #fad2e0;
 }
 .divUnirte .divCon .columna1 .ul__uni li {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
   line-height: 1rem;
@@ -761,7 +763,7 @@ body .fotQuien {
   background-color: black;
   opacity: 50%;
   transition: 0.5s;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1rem;
   color: white;
   border-color: #000000;
@@ -801,7 +803,7 @@ body .fotQuien {
   background-color: #fad2e0;
 }
 .divUnirte .divCon .columna2 .ul__uni li {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
   line-height: 1rem;
@@ -816,7 +818,7 @@ body .fotQuien {
   background-color: black;
   opacity: 50%;
   transition: 0.5s;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1rem;
   color: white;
   border-color: #000000;
@@ -855,7 +857,7 @@ body .fotQuien {
   background-color: #fad2e0;
 }
 .divUnirte .divCon .columna3 .ul__uni li {
-  font-family: lobsterregular;
+  font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
   line-height: 1rem;
@@ -870,7 +872,7 @@ body .fotQuien {
   background-color: black;
   opacity: 50%;
   transition: 0.5s;
-  font-family: lusitanaregular;
+  font-family: "lusitana";
   font-size: 1rem;
   color: white;
   border-color: #000000;
@@ -1474,7 +1476,7 @@ body .fotQuien {
     padding-block: 0.25em 0.25em;
   }
   #body__index .fotInicio {
-    margin-top: 15rem;
+    margin-top: 18rem;
   }
   #body__index .fotInicio .div__padre {
     margin-top: 0;
