@@ -1993,7 +1993,7 @@ body .fotQuien {
     padding-block: 0.25em 0.25em;
   }
   #body__index .fotInicio {
-    margin-top: 18rem;
+    margin-top: 1rem;
   }
   #body__index .fotInicio .div__padre {
     margin-top: 0;
@@ -2352,6 +2352,7 @@ body .fotQuien {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
   }
   body .mainQuien .divQuien .imgJackie {
     width: 80vw;
@@ -2441,7 +2442,7 @@ body .fotQuien {
   }
   #contactos .contacto__main .contacto__titulo {
     font-size: 2rem;
-    margin-block: 0 1rem;
+    margin-block: 3rem 1rem;
   }
   #contactos .contacto__main .contacto__titulo h1 {
     font-size: 2rem;
