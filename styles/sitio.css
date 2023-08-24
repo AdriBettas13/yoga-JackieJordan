@@ -65,7 +65,7 @@ footer .fot__icon i {
   }
   .fotInicio .div__padre .hijo p {
     font-size: 1rem;
-    letter-spacing: 0.0002;
+    letter-spacing: 0.0002rem;
     text-align: start;
   }
   .fotInicio .fot__icon {
@@ -742,6 +742,7 @@ body .fotQuien {
   border-width: 0.15rem;
   border-style: dashed solid;
   transition: 0.3s;
+  margin: 1rem;
 }
 .divUnirte .divCon .columna1 .ul__uni:hover {
   background-color: #fad2e0;
