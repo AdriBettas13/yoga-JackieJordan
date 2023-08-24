@@ -724,7 +724,6 @@ body .fotQuien {
 }
 .divUnirte .divCon .columna1 {
   background-image: url("../img/personas-mayores-felices-tiro-medio-interior.webp");
-  height: 90.6vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -777,7 +776,6 @@ body .fotQuien {
 }
 .divUnirte .divCon .columna2 {
   background-image: url("../img/mujer-rubia-embarazada-escuchando-musica.webp");
-  height: 90.6vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -832,7 +830,6 @@ body .fotQuien {
 }
 .divUnirte .divCon .columna3 {
   background-image: url("../img/joven-sonriente-apuntando-arriba.webp");
-  height: 90.6vh;
   background-position: center;
   background-size: cover;
   display: flex;
