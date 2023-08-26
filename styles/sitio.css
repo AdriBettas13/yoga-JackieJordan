@@ -712,7 +712,6 @@ body .fotQuien {
 .header__uni .div__uni nav .ul__nav__uni li .uni__a:hover {
   background: rgba(60, 6, 28, 0.3882352941);
   cursor: pointer;
-  transform: scale(1.2);
 }
 
 .divUnirte {
@@ -751,12 +750,12 @@ body .fotQuien {
   font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1rem;
+  line-height: 1.5rem;
   padding-block: 1rem 2rem;
   margin: 1rem;
 }
 .divUnirte .divCon .columna1 .btn__ter {
-  margin-top: 10rem;
+  margin-block: 6rem 1rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
@@ -805,12 +804,12 @@ body .fotQuien {
   font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1rem;
+  line-height: 1.5rem;
   padding-block: 1rem 2rem;
   margin: 1rem;
 }
 .divUnirte .divCon .columna2 .btn__emb {
-  margin-top: 10rem;
+  margin-block: 6rem 1rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
@@ -850,6 +849,7 @@ body .fotQuien {
   border-width: 0.15rem;
   border-style: dashed solid;
   transition: 0.3s;
+  margin: 1rem;
 }
 .divUnirte .divCon .columna3 .ul__uni:hover {
   background-color: #fad2e0;
@@ -858,12 +858,12 @@ body .fotQuien {
   font-family: "lobsterregular";
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1rem;
+  line-height: 1.5rem;
   padding-block: 1rem 2rem;
   margin: 1rem;
 }
 .divUnirte .divCon .columna3 .btn__nin {
-  margin-top: 9rem;
+  margin-block: 6rem 1rem;
   border-radius: 2rem;
   padding-block: 1rem;
   padding-inline: 2rem;
@@ -2007,6 +2007,7 @@ body .fotQuien {
     padding-inline: 0;
     padding-top: 3%;
     margin: 0;
+    width: 102%;
   }
   .header__uni .div__uni {
     flex-direction: column;
@@ -2047,13 +2048,13 @@ body .fotQuien {
     display: table;
     width: 100vw;
     height: 33vh;
-    background-position-y: -101px;
+    background-position-y: -75px;
     border-block: none;
   }
   main .divUnirte .divCon .columna1 .ul__uni {
     height: auto;
     margin-top: 2rem;
-    margin-right: 15rem;
+    margin-inline: 0rem 13rem;
     padding-right: 1rem;
     line-height: 1rem;
     white-space: initial;
@@ -2067,7 +2068,7 @@ body .fotQuien {
   }
   main .divUnirte .divCon .columna1 .btn__ter {
     margin-top: -8rem;
-    margin-left: 20rem;
+    margin-left: 14rem;
   }
   main .divUnirte .divCon .columna1 .btn__ter:hover {
     font-size: 1rem;
@@ -2076,14 +2077,13 @@ body .fotQuien {
     display: table;
     width: 100vw;
     height: 33vh;
-    background-position-y: -185px;
+    background-position-y: -79px;
     border: 0.15rem solid black;
   }
   main .divUnirte .divCon .columna2 .ul__uni {
     height: auto;
     margin-top: 2rem;
-    margin-right: 15rem;
-    margin-left: 0;
+    margin-inline: 0rem 13rem;
     padding-right: 1rem;
     line-height: 1rem;
     white-space: initial;
@@ -2097,7 +2097,7 @@ body .fotQuien {
   }
   main .divUnirte .divCon .columna2 .btn__emb {
     margin-top: -27%;
-    margin-left: 20rem;
+    margin-left: 14rem;
   }
   main .divUnirte .divCon .columna2 .btn__emb:hover {
     font-size: 1rem;
@@ -2108,12 +2108,12 @@ body .fotQuien {
     height: 33vh;
     border-bottom: 0.15rem solid black;
     border-top: none;
-    background-position-x: 104px;
+    background-position-x: 80px;
   }
   main .divUnirte .divCon .columna3 .ul__uni {
     height: auto;
     margin-top: 2rem;
-    margin-inline: 0 15rem;
+    margin-inline: 0 13rem;
     padding-right: 1rem;
     line-height: 1rem;
     white-space: initial;
@@ -2126,7 +2126,7 @@ body .fotQuien {
     padding-block: 1rem 1rem;
   }
   main .divUnirte .divCon .columna3 .btn__nin {
-    margin-left: 20rem;
+    margin-left: 14rem;
     margin-top: -120px;
   }
   main .divUnirte .divCon .columna3 .btn__nin:hover {

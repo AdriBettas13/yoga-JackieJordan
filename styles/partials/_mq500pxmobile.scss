@@ -115,7 +115,7 @@
            padding-inline: 0;
            padding-top: 3%;
            margin: 0;  
-
+           width: 102%;
            .div__uni
 {
    flex-direction: column;
@@ -178,14 +178,14 @@ margin-bottom: 3%;
 display: table;
 width: 100vw;
 height: 33vh;
-background-position-y: -101px;
+background-position-y: -75px;
 border-block: none;
 .ul__uni
 {
 
 height: auto;
 margin-top: 2rem;
-margin-right: 15rem;
+margin-inline:0rem 13rem;
 padding-right: 1rem;
 line-height: 1rem;
 white-space: initial;
@@ -201,7 +201,7 @@ li{
 .btn__ter
 {
    margin-top: -8rem;
-   margin-left: 20rem;
+   margin-left: 14rem;
    &:hover
    {
        font-size: 1rem;
@@ -213,7 +213,7 @@ li{
    display: table;
    width: 100vw;
    height: 33vh;
-   background-position-y: -185px;
+   background-position-y: -79px;
    border: 0.15rem solid black ;
    
    .ul__uni
@@ -221,8 +221,7 @@ li{
    
    height: auto;
    margin-top: 2rem;
-   margin-right: 15rem;
-   margin-left: 0;
+   margin-inline:0rem 13rem;
    padding-right: 1rem;
    line-height: 1rem;
    white-space: initial;
@@ -238,7 +237,7 @@ li{
    .btn__emb
 {
    margin-top: -27%;
-   margin-left: 20rem;
+   margin-left: 14rem;
    &:hover
    {
        font-size: 1rem;
@@ -252,14 +251,14 @@ li{
    height: 33vh;
    border-bottom: 0.15rem solid black;
    border-top: none;
-   background-position-x: 104px;
+   background-position-x: 80px;
    
    .ul__uni
    {
    
    height: auto;
    margin-top: 2rem;
-   margin-inline: 0 15rem;
+   margin-inline: 0 13rem;
    padding-right: 1rem;
    line-height: 1rem;
    white-space: initial;
@@ -275,7 +274,7 @@ li{
    
    .btn__nin
 {
-   margin-left: 20rem;
+   margin-left: 14rem;
    margin-top: -120px;
 &:hover
 {
